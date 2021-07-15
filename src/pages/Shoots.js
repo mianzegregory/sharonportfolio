@@ -1,19 +1,43 @@
 import React from "react";
-import PageWrapper from "../components/common/PageWrapper";
 import data from "../data.json";
-import Image from "../components/common/Image";
+import Gallery from "react-photo-gallery";
 
 const Shoots = () => {
-  return (
-    <PageWrapper>
-      <Image image={data.images.shoots[1]} />
-      <Image image={data.images.shoots[2]} />
-      <Image image={data.images.shoots[3]} />
-      <Image image={data.images.shoots[4]} />
-      <Image image={data.images.shoots[5]} />
-      <Image image={data.images.shoots[6]} />
-    </PageWrapper>
-  );
+  const photos = [
+    {
+      src: data.images.shoots[3],
+      width: 7,
+      height: 5,
+    },
+    
+    {
+      src: data.images.shoots[2],
+      width: 2,
+      height: 2,
+    },
+    {
+      src: data.images.shoots[4],
+      width: 7,
+      height: 5,
+    },
+    {
+      src: data.images.shoots[1],
+      width: 5,
+      height: 4,
+    },
+    {
+      src: data.images.shoots[5],
+      width: 7,
+      height: 5,
+    },
+    {
+      src: data.images.shoots[6],
+      width: 3,
+      height: 4,
+    },
+  ];
+
+  return <Gallery photos={photos} direction={"column"} />;
 };
 
 export default Shoots;

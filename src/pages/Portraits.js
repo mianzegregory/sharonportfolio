@@ -1,7 +1,6 @@
 import React from "react";
 import data from "../data.json";
 import Gallery from "react-photo-gallery";
-import PageWrapper from "../components/common/PageWrapper";
 
 const Portraits = () => {
   const photos = [
