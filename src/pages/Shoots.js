@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../data.json";
 import Gallery from "react-photo-gallery";
+import ContentWrapper from "../components/common/ContentWrapper";
 
 const Shoots = () => {
   const photos = [
@@ -9,7 +10,7 @@ const Shoots = () => {
       width: 7,
       height: 5,
     },
-    
+
     {
       src: data.images.shoots[2],
       width: 2,
@@ -37,7 +38,11 @@ const Shoots = () => {
     },
   ];
 
-  return <Gallery photos={photos} direction={"column"} />;
+  return (
+    <ContentWrapper>
+      <Gallery photos={photos} direction={"column"} />;
+    </ContentWrapper>
+  );
 };
 
 export default Shoots;

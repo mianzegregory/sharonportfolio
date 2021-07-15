@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../data.json";
 import Gallery from "react-photo-gallery";
+import ContentWrapper from "../components/common/ContentWrapper";
 
 const Events = () => {
   const photos = [
@@ -58,7 +59,11 @@ const Events = () => {
     },
   ];
 
-  return <Gallery photos={photos} direction={"column"} />;
+  return (
+    <ContentWrapper>
+      <Gallery photos={photos} direction={"column"} />;
+    </ContentWrapper>
+  );
 };
 
 export default Events;

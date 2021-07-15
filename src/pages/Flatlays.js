@@ -1,5 +1,6 @@
 import React from "react";
 import Gallery from "react-photo-gallery";
+import ContentWrapper from "../components/common/ContentWrapper";
 import data from "../data.json";
 
 const Flatlays = () => {
@@ -32,7 +33,11 @@ const Flatlays = () => {
     },
   ];
 
-  return <Gallery photos={photos} direction={"column"} />;
+  return (
+    <ContentWrapper>
+      <Gallery photos={photos} direction={"column"} />;
+    </ContentWrapper>
+  );
 };
 
 export default Flatlays;
