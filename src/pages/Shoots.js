@@ -5,16 +5,12 @@ import data from "../data.json";
 const Shoots = () => {
   return (
     <Wrapper>
-      <img src={data.images.events.cultureweek2018[1]} />
-      <img src={data.images.events.cultureweek2018[2]} />
-      <img src={data.images.events.cultureweek2018[3]} />
-      <img src={data.images.events.cultureweek2018[4]} />
-      <img src={data.images.events.cultureweek2018[5]} />
-      <img src={data.images.events.cultureweek2018[6]} />
-      <img src={data.images.events.cultureweek2018[7]} />
-      <img src={data.images.events.cultureweek2018[8]} />
-      <img src={data.images.events.cultureweek2018[9]} />
-      <img src={data.images.events.cultureweek2018[10]} />
+      <img src={data.images.shoots[1]} />
+      <img src={data.images.shoots[2]} />
+      <img src={data.images.shoots[3]} />
+      <img src={data.images.shoots[4]} />
+      <img src={data.images.shoots[5]} />
+      <img src={data.images.shoots[6]} />
     </Wrapper>
   );
 };
