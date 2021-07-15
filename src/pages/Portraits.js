@@ -1,11 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import PageWrapper from "../components/common/PageWrapper";
 import Image from "../components/common/Image";
 import data from "../data.json";
 
 const Portraits = () => {
   return (
-    <Wrapper>
+    <PageWrapper>
       <Image image={data.images.portraits[1]} />
       <Image image={data.images.portraits[1]} />
       <Image image={data.images.portraits[2]} />
@@ -21,10 +21,8 @@ const Portraits = () => {
       <Image image={data.images.portraits[12]} />
       <Image image={data.images.portraits[13]} />
       <Image image={data.images.portraits[14]} />
-    </Wrapper>
+    </PageWrapper>
   );
 };
 
 export default Portraits;
-
-const Wrapper = styled.main``;
