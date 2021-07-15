@@ -6,6 +6,7 @@ import Shoots from "./pages/Shoots";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Slide } from "@material-ui/core";
+import Appbar from "./components/common/Appbar";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ function App() {
 
   return loading === false ? (
     <Router>
+      <Appbar />
       <Slide direction="up" in>
         <Switch>
           <Route path="/" exact component={Portraits} />
