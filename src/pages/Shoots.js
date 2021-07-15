@@ -1,24 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import data from "../data.json";
+import Image from "../components/common/Image";
 
 const Shoots = () => {
   return (
     <Wrapper>
-      <img src={data.images.shoots[1]} />
-      <img src={data.images.shoots[2]} />
-      <img src={data.images.shoots[3]} />
-      <img src={data.images.shoots[4]} />
-      <img src={data.images.shoots[5]} />
-      <img src={data.images.shoots[6]} />
+      <Image image={data.images.shoots[1]} />
+      <Image image={data.images.shoots[2]} />
+      <Image image={data.images.shoots[3]} />
+      <Image image={data.images.shoots[4]} />
+      <Image image={data.images.shoots[5]} />
+      <Image image={data.images.shoots[6]} />
     </Wrapper>
   );
 };
 
 export default Shoots;
 
-const Wrapper = styled.main`
-  img {
-    width: 30%;
-  }
-`;
+const Wrapper = styled.main``;

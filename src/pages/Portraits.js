@@ -27,8 +27,4 @@ const Portraits = () => {
 
 export default Portraits;
 
-const Wrapper = styled.main`
-  img {
-    width: 30%;
-  }
-`;
+const Wrapper = styled.main``;

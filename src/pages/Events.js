@@ -1,28 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import data from "../data.json";
+import Image from "../components/common/Image";
 
 const Events = () => {
   return (
     <Wrapper>
-      <img src={data.images.events.cultureweek2018[1]} />
-      <img src={data.images.events.cultureweek2018[2]} />
-      <img src={data.images.events.cultureweek2018[3]} />
-      <img src={data.images.events.cultureweek2018[4]} />
-      <img src={data.images.events.cultureweek2018[5]} />
-      <img src={data.images.events.cultureweek2018[6]} />
-      <img src={data.images.events.cultureweek2018[7]} />
-      <img src={data.images.events.cultureweek2018[8]} />
-      <img src={data.images.events.cultureweek2018[9]} />
-      <img src={data.images.events.cultureweek2018[10]} />
+      <Image image={data.images.events.cultureweek2018[1]} />
+      <Image image={data.images.events.cultureweek2018[2]} />
+      <Image image={data.images.events.cultureweek2018[3]} />
+      <Image image={data.images.events.cultureweek2018[4]} />
+      <Image image={data.images.events.cultureweek2018[5]} />
+      <Image image={data.images.events.cultureweek2018[6]} />
+      <Image image={data.images.events.cultureweek2018[7]} />
+      <Image image={data.images.events.cultureweek2018[8]} />
+      <Image image={data.images.events.cultureweek2018[9]} />
+      <Image image={data.images.events.cultureweek2018[10]} />
     </Wrapper>
   );
 };
 
 export default Events;
 
-const Wrapper = styled.main`
-  img {
-    width: 30%;
-  }
-`;
+const Wrapper = styled.main``;
