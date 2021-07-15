@@ -12,4 +12,8 @@ const Image = ({ image, alt }) => {
 
 export default Image;
 
-const Wrapper = styled(LazyLoadImage)``;
+const Wrapper = styled(LazyLoadImage)`
+&& {
+  width: 30%;
+}
+`;
