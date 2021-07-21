@@ -11,47 +11,32 @@ const Appbar = () => {
     <Wrapper>
       <Link to="/">Sharon Jaoko</Link>
 
-      <nav>
-        <ul className="nav_links">
-          <Link to="/">
-            <li>Portraits</li>
-          </Link>
-          <Link to="/events">
-            <li>Events</li>
-          </Link>
-          <Link to="/flatlays">
-            <li>Flatlays</li>
-          </Link>
-          <Link to="/shoots">
-            <li>Shoots</li>
-          </Link>
-        </ul>
-      </nav>
+      <div className="nav_links">
+        <Link to="/">Portraits</Link>
+        <Link to="/events">Events</Link>
+        <Link to="/flatlays">Flatlays</Link>
+        <Link to="/shoots">Shoots</Link>
+      </div>
+      <div></div>
     </Wrapper>
   );
 };
 
 export default Appbar;
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+const Wrapper = styled.nav`
+  height: 100vh;
+  width: 10vw;
   position: fixed;
-  width: 100%;
-  margin: auto;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  padding: 0.7rem;
   background-color: #fff;
-  overflow: visible;
+  left: 0;
   top: 0;
-  z-index: 1;
-  * {
-    background-color: transparent;
-  }
-  li,
+  z-index: 3;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   a {
     font-weight: 600;
     font-size: 0.9rem;
@@ -61,33 +46,11 @@ const Wrapper = styled.div`
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
   }
-  nav {
-    display: flex;
-    flex-direction: row;
-  }
-  .logo {
-    cursor: pointer;
-    height: 2rem;
-  }
+
   .nav_links {
-    list-style: none;
-    margin: 0 1rem;
-    button {
-      padding: 0.5rem;
-      margin: 0.5rem;
-    }
-  }
-  .nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-    font-family: "Ubuntu", sans-serif;
-    transition: all 0.3s ease 0s;
-  }
-  .nav_links li a {
-    font-family: "Ubuntu", sans-serif;
-    transition: all 0.3s ease 0s;
-  }
-  .nav_links li a:hover {
-    color: #0088a9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
