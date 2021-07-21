@@ -14,7 +14,6 @@ const Events = () => {
       height: 5,
       alt: "culture week 1",
     },
-
     {
       src: data.images.events.cultureweek2018[2],
       width: 5,
@@ -39,13 +38,6 @@ const Events = () => {
       height: 4,
       alt: "culture week 5",
     },
-    {
-      src: data.images.events.cultureweek2018[6],
-      width: 4,
-      height: 3,
-      alt: "culture week 6",
-    },
-
     {
       src: data.images.events.cultureweek2018[7],
       width: 3,
