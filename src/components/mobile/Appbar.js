@@ -5,33 +5,23 @@ import { Link } from "react-router-dom";
 const MobileAppbar = () => {
   return (
     <ToolbarWrapper>
-      <Link to="/">
-        <a>Sharon Jaoko</a>
-      </Link>
+      <Link to="/">Sharon Jaoko</Link>
       <input className="menu-btn" type="checkbox" id="menu-btn" />
       <label className="menu-icon" for="menu-btn">
         <span className="navicon"></span>
       </label>
       <ul className="menu">
         <Link to="/">
-          <li>
-            <a>Portraits</a>
-          </li>
+          <li>Portraits</li>
         </Link>
         <Link to="/events">
-          <li>
-            <a>Events</a>
-          </li>
+          <li>Events</li>
         </Link>
         <Link to="/flatlays">
-          <li>
-            <a>Flatlays</a>
-          </li>
+          <li>Flatlays</li>
         </Link>
         <Link to="/shoots">
-          <li>
-            <a>Shoots</a>
-          </li>
+          <li>Shoots</li>
         </Link>
       </ul>
     </ToolbarWrapper>
@@ -48,7 +38,7 @@ const ToolbarWrapper = styled.header`
   width: 100%;
   margin-bottom: 3rem;
   z-index: 3;
-  a {
+  li {
     font-family: "Ubuntu", sans-serif;
     text-decoration: none !important;
     color: #000;
@@ -64,7 +54,7 @@ const ToolbarWrapper = styled.header`
     overflow: hidden;
     background-color: #fff;
   }
-  li a {
+  li {
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
@@ -146,6 +136,7 @@ const ToolbarWrapper = styled.header`
   @media (min-width: 48em) {
     li {
       float: left;
+      padding: 20px 30px;
     }
     li a {
       padding: 20px 30px;

@@ -9,31 +9,21 @@ const Appbar = () => {
     <MobileAppbar />
   ) : (
     <Wrapper>
-      <Link to="/">
-        <a>Sharon Jaoko</a>
-      </Link>
+      <Link to="/">Sharon Jaoko</Link>
 
       <nav>
         <ul className="nav_links">
           <Link to="/">
-            <li>
-              <a>Portraits</a>
-            </li>
+            <li>Portraits</li>
           </Link>
           <Link to="/events">
-            <li>
-              <a>Events</a>
-            </li>
+            <li>Events</li>
           </Link>
           <Link to="/flatlays">
-            <li>
-              <a>Flatlays</a>
-            </li>
+            <li>Flatlays</li>
           </Link>
           <Link to="/shoots">
-            <li>
-              <a>Shoots</a>
-            </li>
+            <li>Shoots</li>
           </Link>
         </ul>
       </nav>
@@ -90,6 +80,8 @@ const Wrapper = styled.div`
   .nav_links li {
     display: inline-block;
     padding: 0px 20px;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease 0s;
   }
   .nav_links li a {
     font-family: "Ubuntu", sans-serif;
