@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import ContentWrapper from "../components/common/ContentWrapper";
+import PageWrapper from "../components/common/PageWrapper";
 import data from "../data.json";
 
 const Gallery = lazy(() => import("react-photo-gallery"));
@@ -42,11 +42,11 @@ const Flatlays = () => {
   ];
 
   return (
-    <ContentWrapper>
+    <PageWrapper>
       <Suspense fallback={renderLoader}>
         <Gallery photos={photos} direction={"column"} />;
       </Suspense>
-    </ContentWrapper>
+    </PageWrapper>
   );
 };
 

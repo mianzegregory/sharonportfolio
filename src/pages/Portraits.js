@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import data from "../data.json";
-import ContentWrapper from "../components/common/ContentWrapper";
+import PageWrapper from "../components/common/PageWrapper";
 
 const Gallery = lazy(() => import("react-photo-gallery"));
 
@@ -94,11 +94,11 @@ const Portraits = () => {
   ];
 
   return (
-    <ContentWrapper>
+    <PageWrapper>
       <Suspense fallback={renderLoader}>
         <Gallery photos={photos} direction={"column"} />;
       </Suspense>
-    </ContentWrapper>
+    </PageWrapper>
   );
 };
 
