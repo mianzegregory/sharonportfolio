@@ -12,10 +12,9 @@ const Appbar = () => {
       <Link to="/">Sharon Jaoko</Link>
 
       <div className="nav_links">
-        <Link to="/">Portraits</Link>
-        <Link to="/events">Events</Link>
-        <Link to="/flatlays">Flatlays</Link>
-        <Link to="/shoots">Shoots</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/about">About</Link>
+        <Link to="/blog">Blog</Link>
       </div>
       <div></div>
     </Wrapper>
