@@ -25,9 +25,9 @@ function App() {
       <Slide direction="up" in>
         <Switch>
           <Route path="/" exact component={Portraits} />
-          <Route path="/events" exact component={Events} />
-          <Route path="/flatlays" exact component={Flatlays} />
-          <Route path="/shoots" exact component={Shoots} />
+          <Route path="/portfolio" exact component={Events} />
+          <Route path="/about" exact component={Flatlays} />
+          <Route path="/blog" exact component={Shoots} />
         </Switch>
       </Slide>
     </Router>
