@@ -7,6 +7,7 @@ const PageWrapper = styled.main`
   align-items: center;
   padding: 2rem;
   margin: 0;
+  margin-top: 3rem;
   width: 100vw;
   min-height: 100vh;
 `;
