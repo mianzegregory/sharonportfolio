@@ -24,11 +24,10 @@ const Appbar = () => {
 export default Appbar;
 
 const Wrapper = styled.nav`
-  height: 100vh;
-  width: 10vw;
+  width: 100vw;
   position: fixed;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
@@ -36,20 +35,20 @@ const Wrapper = styled.nav`
   top: 0;
   z-index: 3;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
   a {
-    font-weight: 600;
     font-size: 0.9rem;
     color: #000;
     line-height: 1.6;
     letter-spacing: 2px;
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
+    margin: 0 1rem;
   }
-
   .nav_links {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 `;
