@@ -7,6 +7,7 @@ import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Slide } from "@material-ui/core";
 import Appbar from "./components/common/Appbar";
+import Footer from "./components/common/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/blog" exact component={Blog} />
         </Switch>
       </Slide>
+      <Footer />
     </Router>
   ) : (
     <div>
