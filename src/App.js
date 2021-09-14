@@ -1,12 +1,13 @@
 import "./App.css";
-import Portraits from "./pages/Portraits";
-import Events from "./pages/Events";
-import Flatlays from "./pages/Flatlays";
-import Shoots from "./pages/Shoots";
+import Landing from "./pages/Landing";
+import Blog from "./pages/Blog";
+import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Slide } from "@material-ui/core";
 import Appbar from "./components/common/Appbar";
+import Footer from "./components/common/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,12 +25,13 @@ function App() {
       <Appbar />
       <Slide direction="up" in>
         <Switch>
-          <Route path="/" exact component={Portraits} />
-          <Route path="/events" exact component={Events} />
-          <Route path="/flatlays" exact component={Flatlays} />
-          <Route path="/shoots" exact component={Shoots} />
+          <Route path="/" exact component={Landing} />
+          <Route path="/portfolio" exact component={Portfolio} />
+          <Route path="/about" exact component={About} />
+          <Route path="/blog" exact component={Blog} />
         </Switch>
       </Slide>
+      <Footer />
     </Router>
   ) : (
     <div>
