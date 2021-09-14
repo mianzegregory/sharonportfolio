@@ -30,6 +30,7 @@ const Image = ({ src, alt }) => {
 export default Image;
 
 const ImgWrapper = styled.div`
+  cursor: pointer;
   width: 30%;
   height: auto;
   object-fit: cover;
