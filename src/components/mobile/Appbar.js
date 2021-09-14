@@ -11,17 +11,14 @@ const MobileAppbar = () => {
         <span className="navicon"></span>
       </label>
       <ul className="menu">
-        <Link to="/">
-          <li>Portraits</li>
+        <Link to="/portfolio">
+          <li>Portfolio</li>
         </Link>
-        <Link to="/events">
-          <li>Events</li>
+        <Link to="/about">
+          <li>About</li>
         </Link>
-        <Link to="/flatlays">
-          <li>Flatlays</li>
-        </Link>
-        <Link to="/shoots">
-          <li>Shoots</li>
+        <Link to="/blog">
+          <li>Blog</li>
         </Link>
       </ul>
     </ToolbarWrapper>
@@ -38,14 +35,14 @@ const ToolbarWrapper = styled.header`
   width: 100%;
   margin-bottom: 3rem;
   z-index: 3;
-  li {
-    font-family: "Ubuntu", sans-serif;
-    text-decoration: none !important;
+  a {
+    font-size: 0.9rem;
     color: #000;
     line-height: 1.6;
-    padding: 0.1rem;
-    font-weight: 600;
-    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0 1rem;
   }
   ul {
     margin: 0;
@@ -64,13 +61,6 @@ const ToolbarWrapper = styled.header`
     color: #000;
     line-height: 1.6;
     letter-spacing: 2px;
-    text-decoration: none;
-  }
-  .logo {
-    display: block;
-    float: left;
-    height: 2rem;
-    padding: 1rem;
     text-decoration: none;
   }
   /* menu */
