@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import PageWrapper from "../components/common/PageWrapper";
 import Portraits from "./Portfolio/Portraits";
 import Flatlays from "./Portfolio/Flatlays";
@@ -7,10 +7,6 @@ import Shoots from "./Portfolio/Shoots";
 
 const Portfolio = () => {
   const [subpage, setSubpage] = useState(0);
-
-  // useEffect(() => {
-  //   setSubpage("portrait");
-  // });
 
   return (
     <PageWrapper>
