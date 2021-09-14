@@ -46,6 +46,9 @@ const ImgWrapper = styled.div`
   * {
     background-color: transparent !important;
   }
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
 `;
 
 const Wrapper = styled(LazyLoadImage)`
