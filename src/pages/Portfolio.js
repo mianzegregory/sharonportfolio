@@ -7,7 +7,7 @@ import Shoots from "./Portfolio/Shoots";
 const Portfolio = () => {
   return (
     <PageWrapper>
-      <Shoots />
+      <Portraits />
     </PageWrapper>
   );
 };
