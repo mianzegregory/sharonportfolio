@@ -48,4 +48,7 @@ const Wrapper = styled.footer`
   #greeting {
     color: #a5a5a5;
   }
+  @media(max-width: 500px){
+    flex-direction: column;
+  }
 `;

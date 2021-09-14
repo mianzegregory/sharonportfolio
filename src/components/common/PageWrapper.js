@@ -8,10 +8,12 @@ const PageWrapper = styled.main`
   padding: 1rem 5%;
   margin: 0;
   width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   h1 {
-    font-align: center;
+    text-align: center;
     font-size: 1.2rem;
+    line-height: 1.8;
     margin: 2rem;
     margin-top: 0;
     font-family: "Open Sans", sans-serif;
@@ -39,6 +41,29 @@ const PageWrapper = styled.main`
       font-family: "Open Sans", sans-serif;
       font-weight: bold;
     }
+  }
+  @media (max-width: 1024px) {
+    padding: 6rem 1%;
+    text-align: center;
+    justify-content: flex-start;
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      width: 100% !important;
+      font-size: 0.8rem !important;
+    }
+  }
+  @media(max-width: 500px){
+    .portfolio-routing-buttons {
+      margin-top: 1rem;
+      margin-bottom: -2rem;
+      flex-direction: column;
+      justify-content: center;
+      button {
+        margin: 0.5rem;
+        font-size: 0.8rem;
+      }
   }
 `;
 

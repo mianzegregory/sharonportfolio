@@ -22,7 +22,7 @@ const About = () => {
             lineHeight: "1.8",
             fontFamily: "Open Sans",
             fontSize: "1rem",
-            color: "#000",
+            color: "#707070",
           }}
         >
           I am a portrait and event-specialized photographer with a tireless

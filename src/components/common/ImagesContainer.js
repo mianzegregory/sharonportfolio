@@ -12,6 +12,12 @@ const ImagesContainer = styled.div`
   .lazy-load-image-background.blur.lazy-load-image-loaded {
     background-color: transparent;
   }
+  @media (max-width: 1024px) {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
 `;
 
 export const SixImagesContainer = styled.div`
@@ -32,6 +38,19 @@ export const SixImagesContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     background-color: transparent;
+  }
+  @media (max-width: 1024px) {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    .img-row {
+      display: flex;
+      flex-direction: inherit;
+      justify-content: inherit;
+      align-items: inherit;
+    }
   }
 `;
 
