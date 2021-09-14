@@ -6,7 +6,7 @@ import Events from "./Portfolio/Events";
 import Shoots from "./Portfolio/Shoots";
 
 const Portfolio = () => {
-  const [subpage, setSubpage] = useState("portait");
+  const [subpage, setSubpage] = useState(0);
 
   // useEffect(() => {
   //   setSubpage("portrait");
@@ -15,15 +15,15 @@ const Portfolio = () => {
   return (
     <PageWrapper>
       <div className="portfolio-routing-buttons">
-        <button onClick={() => setSubpage("portrait")}>Portraits</button>
-        <button onClick={() => setSubpage("flatlay")}>Flatlays</button>
-        <button onClick={() => setSubpage("event")}>Events</button>
-        <button onClick={() => setSubpage("shoot")}>Shoots</button>{" "}
+        <button onClick={() => setSubpage(0)}>Portraits</button>
+        <button onClick={() => setSubpage(1)}>Flatlays</button>
+        <button onClick={() => setSubpage(2)}>Events</button>
+        <button onClick={() => setSubpage(3)}>Shoots</button>
       </div>
-      {subpage === "portrait" && <Portraits />}
-      {subpage === "flatlay" && <Flatlays />}
-      {subpage === "event" && <Events />}
-      {subpage === "shoot" && <Shoots />}
+      {subpage === 0 && <Portraits />}
+      {subpage === 1 && <Flatlays />}
+      {subpage === 2 && <Events />}
+      {subpage === 3 && <Shoots />}
     </PageWrapper>
   );
 };
