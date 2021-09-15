@@ -9,7 +9,7 @@ const Appbar = () => {
     <MobileAppbar />
   ) : (
     <Wrapper>
-      <Link to="/">Sharon Jaoko</Link>
+      <Link to="/" id="logo">SHARONJAOKO</Link>
 
       <div className="nav_links">
         <Link to="/">Home</Link>
@@ -39,11 +39,20 @@ const Wrapper = styled.nav`
   a {
     font-size: 0.9rem;
     color: #000;
+    font-size: 0.8rem;
     line-height: 1.6;
     letter-spacing: 2px;
     text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0 1rem;
+    font-weight: 400;
+    color: #707070;
+  }
+  #logo {
+    font-weight: 800 !important;
+    font-family: "Fira Sans", sans-serif !important;
+    color: #000 !important;
+    font-size: 1rem !important;
   }
   .nav_links {
     display: flex;
