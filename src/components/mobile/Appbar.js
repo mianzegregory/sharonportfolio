@@ -2,7 +2,7 @@ import { slide as Menu } from "react-burger-menu";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export default (props) => {
+const MobileAppbar = (props) => {
   return (
     <ToolbarWrapper>
       <Menu {...props}>
@@ -19,6 +19,8 @@ export default (props) => {
     </ToolbarWrapper>
   );
 };
+
+export default MobileAppbar;
 
 const ToolbarWrapper = styled.div`
   background-color: transparent;
