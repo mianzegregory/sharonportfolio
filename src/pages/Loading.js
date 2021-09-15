@@ -40,4 +40,12 @@ const Wrapper = styled.main`
     font-family: "Fira Sans", sans-serif;
     color: #707070;
   }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
 `;
