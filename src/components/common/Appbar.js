@@ -38,13 +38,13 @@ const Wrapper = styled.nav`
   a {
     font-size: 0.9rem;
     color: #000;
+    font-weight: 600;
     font-size: 0.8rem;
     line-height: 1.6;
     letter-spacing: 2px;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     margin: 0 1rem;
-    font-weight: 400;
     color: #707070;
   }
   #logo {
