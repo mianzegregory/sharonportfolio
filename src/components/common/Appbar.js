@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { isMobile } from "react-device-detect";
 import MobileAppbar from "../mobile/Appbar";
@@ -9,12 +8,12 @@ const Appbar = () => {
     <MobileAppbar />
   ) : (
     <Wrapper>
-      <Link to="/">Sharon Jaoko</Link>
+      <Link to="/" id="logo">SHARONJAOKO</Link>
 
       <div className="nav_links">
+        <Link to="/">Home</Link>
         <Link to="/portfolio">Portfolio</Link>
         <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
       </div>
       <div></div>
     </Wrapper>
@@ -39,11 +38,20 @@ const Wrapper = styled.nav`
   a {
     font-size: 0.9rem;
     color: #000;
+    font-weight: 600;
+    font-size: 0.8rem;
     line-height: 1.6;
     letter-spacing: 2px;
     text-decoration: none;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0 1rem;
+    color: #707070;
+  }
+  #logo {
+    font-weight: 800 !important;
+    font-family: "Fira Sans", sans-serif !important;
+    color: #000 !important;
+    font-size: 1rem !important;
   }
   .nav_links {
     display: flex;
