@@ -1,8 +1,10 @@
+import { Slide } from "@material-ui/core";
 import Image from "../../components/common/Image";
 import { SixImagesContainer } from "../../components/common/ImagesContainer";
 
 const Flatlays = () => {
   return (
+    <Slide in direction="up" timeout={300}>
       <SixImagesContainer>
         <div className="img-row">
           <Image
@@ -33,6 +35,7 @@ const Flatlays = () => {
           />
         </div>
       </SixImagesContainer>
+    </Slide>
   );
 };
 

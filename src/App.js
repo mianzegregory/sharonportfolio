@@ -4,16 +4,17 @@ import Blog from "./pages/Blog";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Slide } from "@material-ui/core";
 import Appbar from "./components/common/Appbar";
 import Footer from "./components/common/Footer";
+import LoadingPage from "./pages/Loading";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 900);
+    setTimeout(() => setLoading(false), 1500);
     // AOS.init({
     //   duration: 1000,
     // });
@@ -23,7 +24,7 @@ function App() {
   return loading === false ? (
     <Router>
       <Appbar />
-      <Slide direction="up" in>
+      <Slide direction="up" in timeout={300}>
         <Switch>
           <Route path="/" exact component={Landing} />
           <Route path="/portfolio" exact component={Portfolio} />
@@ -35,7 +36,7 @@ function App() {
     </Router>
   ) : (
     <div>
-      <p>Loading</p>
+      <LoadingPage />
     </div>
   );
 }
