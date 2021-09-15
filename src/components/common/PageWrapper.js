@@ -43,7 +43,7 @@ const PageWrapper = styled.main`
     }
   }
   @media (max-width: 1024px) {
-    padding: 6rem 1%;
+    padding: 2rem 1%;
     text-align: center;
     justify-content: flex-start;
     h1 {
@@ -56,13 +56,34 @@ const PageWrapper = styled.main`
   }
   @media(max-width: 500px){
     .portfolio-routing-buttons {
-      margin-top: 1rem;
-      margin-bottom: -2rem;
-      flex-direction: column;
-      justify-content: center;
+      width: 100vw;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #fff;
+      left: 0;
+      bottom: 0;
+      z-index: 4;
+      box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+      padding: 1rem;
       button {
-        margin: 0.5rem;
+        margin: 0.3rem;
         font-size: 0.8rem;
+        background-color: transparent;
+        box-shadow: none;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        color: #000;
+        padding: 0.3rem;
+        text-align: center;
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0.8rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
       }
   }
 `;
