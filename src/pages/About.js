@@ -34,6 +34,20 @@ const About = () => {
             convey a desired message. Having an active creative side allows me
             to give a unique twist to each photo in order to create a compelling
             image that lasts in the mind of an audience.
+            <br />
+            <br />
+            Say hello
+            <br />
+            <span
+              style={{
+                backgroundColor: "transparent",
+                fontFamily: "Fira Sans",
+                fontWeight: "800",
+                color: "#000",
+              }}
+            >
+              sharonjaoko@gmail.com
+            </span>
           </p>
         </ImagesContainer>
       </PageWrapper>
