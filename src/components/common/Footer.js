@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import instagram from "../../assets/ig.svg";
-import twitter from "../../assets/tw.svg";
+// import twitter from "../../assets/tw.svg";
 import linkedin from "../../assets/in.svg";
 
 const Footer = () => {
@@ -11,9 +11,13 @@ const Footer = () => {
         <p>sharonjaoko@gmail.com</p>
       </div>
       <div>
-        <img src={instagram} alt="Instagram" />
-        <img src={twitter} alt="Twitter" />
-        <img src={linkedin} alt="LinkedIn" />
+        <a href="https://www.instagram.com/ethereal.s0ul/" target="_blank" rel="noreferrer">
+          <img src={instagram} alt="Instagram" />
+        </a>
+        {/* <img src={twitter} alt="Twitter" /> */}
+        <a href="https://www.linkedin.com/in/sjaoko/" target="_blank" rel="noreferrer">
+          <img src={linkedin} alt="Linkedin" />
+        </a>
       </div>
     </Wrapper>
   );
@@ -48,7 +52,7 @@ const Wrapper = styled.footer`
   #greeting {
     color: #a5a5a5;
   }
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     flex-direction: column;
     margin-bottom: 3rem;
   }
